@@ -1,0 +1,80 @@
+// problem no 1 
+// printing
+#include <iostream>
+using namespace std;
+
+int main(){
+    for(int i = 1; i <= 5; i++){
+        for(int j = 1; j<= i; j++){
+            cout << "*";
+        }
+        cout << "\n";
+    }
+    for(int i = 5-1; i>= 1; i--){
+        for(int j = 1; j<= i; j++){
+            cout <<"*";
+        }
+        cout <<"\n";
+    }
+}
+#include <iostream>
+using namespace std;
+
+void sendMessge(string message){
+    cout << message;
+}
+int main(){
+    sendMessage("Bjp Wons...");
+}
+
+// problem no argument no return values
+
+#include <iostream>
+using namespace std;
+
+int ticketNumber(){
+    return 101;
+}
+int main(){
+    cout << ticketNumber();
+}
+
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    float inr, usd;
+
+    cout << "Enter amount in INR: ";
+    cin >> inr;
+
+   
+    float rate = 0.012;  
+
+    usd = inr * rate;
+
+    cout << "Amount in Dollar: $" << usd;
+
+    return 0;
+}
+
+
+
+
+// program 5
+// function overloading
+
+#include<iostream>
+using namespace std;
+
+int add(int a, int b){
+    return a+b;
+    
+}
+int main(){
+    cout << add(5,2)<<"\n";
+    cout << add(5,2);
+    
+}
