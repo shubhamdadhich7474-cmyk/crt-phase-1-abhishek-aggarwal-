@@ -1,0 +1,180 @@
+// program 1 
+// coffie billing system
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int coffeePrice = 30;
+    int quantity = 5;
+    int total;
+
+    total = coffeePrice * quantity;
+
+    cout << "Price of 1 coffee = " << coffeePrice << " rupees" << endl;
+    cout << "Quantity = " << quantity << endl;
+    cout << "Total cost of 5 coffees = " << total << " rupees" << endl;
+
+    return 0;
+}
+
+
+
+// program 2 
+// store discount appplication 
+// find 10%-- amount * 0.10
+// discount amount -- amount - 10% amount
+
+#include <iostream>
+using namespace std;
+
+float discount(float discount){
+    return discount -(discount *0.10);
+    
+}
+int main(){
+    cout<< discount(5000);
+}
+
+
+// program 3 
+// smart AC remote 
+// 1.turn on -- 22°c
+// 2. input -- 20.5 -- tempreture set -- 20° c
+// 3. input. -- Eco -- tempreture set -- 24°c
+// 4. input -- turbo -- tempreture set -- 18°c
+
+void setTempreture(){
+    cout <<"Tempreture Set to 22°c"<< "\n"
+    
+}
+void setTempreture (double temp){
+    cout << "Tempreture set to "<< temp << "°c" << "\n";
+}
+void setTempreture(string mode){
+    if(mode == "ECO"){
+        cout<< "Tempreture Set to 24° c"<< "\n";
+    }else if (mode == "TURBO"){
+        cout << "Tempreture Set to 18 °c << " <<"\n";
+    }
+}
+int main (){
+    setTempreture();
+    setTempreture(20.5°);
+    setTempreture("Eco");
+}
+
+
+// program 5
+// swipping of 2 veriables value using pointers and using function
+
+#include <iostream>
+using namespace std;
+
+void swapNumber(int *ptr1 , int *ptr2){
+    int temp = *ptr1;
+    *ptr1 = *ptr2;
+    *ptr2 = temp;
+}
+int main(){
+    int a , b;
+    cin>> a;
+    cin >> b;
+    swapNumber(&a, &b);
+    cout << a << "" << b;
+}
+
+
+
+// problem no 6 
+// classes object 
+#include <iostream>
+using namespace std;
+
+class Student{
+    string name;
+    int age;
+    
+    void introduce(){
+    cout << "Hi there , this person name is " << name <<" and his age is " << age << "\n";
+    
+}
+};
+int main(){
+    Student s1, s2;
+    s1.name = "Abhishek";
+    s1.age = 24;
+    s2. name = "Rahul";
+    s2. age = 23;
+    s1. intrduce();
+    s2.introduce();
+}
+// problem no 6 
+// classes object 
+#include <iostream>
+using namespace std;
+
+class Student{
+    string name;
+    int age;
+    
+    void introduce(){
+    cout << "Hi there , this person name is " << name <<" and his age is " << age << "\n";
+    
+}
+};
+int main(){
+    Student s1, s2;
+    s1.name = "Abhishek";
+    s1.age = 24;
+    s2. name = "Rahul";
+    s2. age = 23;
+    s1. intrduce();
+    s2.introduce();
+}
+
+// problem no 6 
+// classes object 
+#include <iostream>
+using namespace std;
+
+class Student{
+    string name;
+    int age;
+    
+    void introduce(){
+    cout << "Hi there , this person name is " << name <<" and his age is " << age << "\n";
+    
+}
+};
+int main(){
+    Student s1, s2;
+    s1.name = "Abhishek";
+    s1.age = 24;
+    s2. name = "Rahul";
+    s2. age = 23;
+    s1. intrduce();
+    s2.introduce();
+}
+
+
+
+// problem no 7 
+// access specifier 
+// types   -- 7.1 -- public
+//            7.2 -- private
+//            7.3 -- protected
+
+
+// 7.1-- public 
+class publicpark{
+    public:
+    void enetr(){
+        cout << "Anyone can enter in the park ...";
+    }
+};
+int main(){
+    publicpark p;
+    p.enter();
+}
+
